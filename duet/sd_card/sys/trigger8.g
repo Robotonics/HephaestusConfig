@@ -1,0 +1,1 @@
+M292 P0 ; ack message and continue
