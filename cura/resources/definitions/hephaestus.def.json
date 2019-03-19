@@ -1,0 +1,86 @@
+{
+    "version": 2,
+    "name": "Hephaestus",
+    "inherits": "ultimaker",
+    "metadata": {
+        "visible": true,
+        "author": "Frank Zhao",
+        "manufacturer": "Eleccelerator",
+        "weight": 3,
+        "file_formats": "text/x-gcode",
+        "platform": "Hephaestus_platform.stl",
+        "platform_offset": [0, 0, -20],
+        "has_materials": true,
+        "has_machine_quality": true,
+        "has_variants": true,
+        "preferred_variant_name": "0.4 mm",
+        "machine_extruder_trains":
+        {
+            "0": "hephaestus_extruder_0"
+        }
+    },
+    "overrides": {
+        "machine_name": { "default_value": "hephaestus" },
+        "machine_start_gcode" : {
+            "value": "M98 P0:/sys/startprint.g\n"
+        },
+        "machine_end_gcode" : {
+            "value": "M98 P0:/sys/endprint.g\n"
+        },
+        "machine_width": {
+            "default_value": 190
+        },
+        "machine_depth": {
+            "default_value": 175
+        },
+        "machine_height": {
+            "default_value": 285
+        },
+        "machine_heated_bed": {
+            "default_value": true
+        },
+        "machine_head_with_fans_polygon":
+        {
+            "default_value": [
+                [ -45, 30 ],
+                [ -45, -55 ],
+                [ 45, 30 ],
+                [ 45, -55 ]
+            ]
+        },
+        "machine_center_is_zero": {
+            "default_value": false
+        },
+        "gantry_height": {
+            "default_value": 35
+        },
+        "machine_use_extruder_offset_to_offset_coords": {
+            "default_value": true
+        },
+        "machine_gcode_flavor": {
+            "default_value": "RepRap (Marlin/Sprinter)"
+        },
+        "machine_nozzle_tip_outer_diameter": {
+            "default_value": 1
+        },
+        "machine_nozzle_head_distance": {
+            "default_value": 3
+        },
+        "machine_nozzle_expansion_angle": {
+            "default_value": 45
+        },
+        "machine_max_feedrate_x": {
+            "default_value": 300
+        },
+        "machine_max_feedrate_y": {
+            "default_value": 300
+        },
+        "machine_max_feedrate_z": {
+            "default_value": 40
+        },
+        "cool_fan_speed": { "value": "100" },
+        "cool_fan_speed_max": { "value": "100" },
+        "cool_min_speed": { "value": "50" },
+        "line_width": { "value": "round(machine_nozzle_size * 0.875, 3)" }
+    }
+}
