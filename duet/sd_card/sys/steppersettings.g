@@ -51,7 +51,7 @@ M201 E250.00                             ; Set accelerations (mm/s^2)
 M201 U250.00                             ; Set accelerations (mm/s^2)
 
 M906 X1600.00 Y1600.00 I30               ; Set motor currents (mA) and motor idle factor in percent
-M906 Z1600.00 I30                        ; Set motor currents (mA) and motor idle factor in percent
+M906 Z800.00 I30                         ; Set motor currents (mA) and motor idle factor in percent
 M906 E1800.00 I30                        ; Set motor currents (mA) and motor idle factor in percent
 M906 U1800.00 I30                        ; Set motor currents (mA) and motor idle factor in percent
 
