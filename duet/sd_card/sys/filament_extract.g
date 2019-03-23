@@ -1,4 +1,4 @@
-;G0 X95 Y1                      ; if homed, move extruder to middle, best place for filament insertion
+;G0 X90 Y1                      ; if homed, move extruder to middle, best place for filament insertion
                                ; above line is disabled until we have automatic homing or home-if-not-homed
 
 M18 X Y                        ; disables all stepper motors, allows for movement of extruder

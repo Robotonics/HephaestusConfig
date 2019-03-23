@@ -1,4 +1,4 @@
-;G0 X95 Y1                      ; if homed, move extruder to middle, best place for filament insertion
+;G0 X90 Y1                      ; if homed, move extruder to middle, best place for filament insertion
                                ; above line is disabled until we have automatic homing or home-if-not-homed
 
 M18 X Y                        ; disables all stepper motors, allows for movement of extruder
@@ -42,7 +42,8 @@ M98 P0:/sys/buttoncfg_off.g
 
 M574 U0                        ; unassign endstop switch
 
-T-1                            ; deselect tool, standby
+;T-1                           ; deselect tool, standby
+                               ; do NOT deselect tool, it will cause an error during filament swap
 ;M106 S255                     ; fan on, cools faster
 
 M564 H1 S1                     ; safety limit axis

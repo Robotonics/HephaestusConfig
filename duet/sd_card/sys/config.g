@@ -57,7 +57,8 @@ M106 P2 I-1                              ; disable fan 2, allow use as GPIO
 ; Tools
 M563 P0 D0 H1                            ; Define tool 0
 G10 P0 X0 Y0 Z0                          ; Set tool 0 axis offsets
-G10 P0 R0 S200                           ; Set initial tool 0 active and standby temperatures
+;G10 P0 R0 S200                           ; Set initial tool 0 active and standby temperatures
+                                         ; Do not set tool initial temperature, tpostn will recall settings for previously used filament
 
 ; Volumetric Extrusion
 ;M200 D2.85                               ; Set filament diameter
