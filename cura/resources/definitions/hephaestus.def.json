@@ -28,7 +28,7 @@
             "value": "M98 P0:/sys/endprint.g\n"
         },
         "machine_width": {
-            "default_value": 190
+            "default_value": 185
         },
         "machine_depth": {
             "default_value": 175
