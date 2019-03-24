@@ -76,7 +76,7 @@
 			"default_value": 40
 		},
 
-		"machine_firmware_retract": { "default_value": true },
+		"machine_firmware_retract": { "value": true },
 
 		"cool_fan_speed": { "value": "100" },
 		"cool_fan_speed_max": { "value": "100" },
