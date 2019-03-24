@@ -31,11 +31,6 @@ M208 X185 Y175 Z288 S0                   ; Set axis maxima
 ; Endstops
 M574 X1 Y1 S3                            ; Set X and Y endstops controlled by motor load detection
 
-; Z-Probe
-M558 P0 H5 F120 T6000                    ; Disable Z probe but set dive height, probe speed and travel speed
-M557 X15:195 Y15:195 S20                 ; Define mesh grid
-; our printer has no Z-probe
-
 ; Bed Heater
 M305 P0 T100000 B3950 R4700              ; Set thermistor + ADC parameters for heater 0
 ; Keenovo standard silicone heater pad, NTC 100K thermistor, Beta 25/50 3950K-1%
