@@ -4,7 +4,7 @@ M569 P2 S0                               ; Drive 2 (Z) goes backwards
 M569 P3 S0                               ; Drive 3 (E) goes backwards
 
 M350 X16 Y16 I1                          ; Configure microstepping with interpolation
-;M350 Z1 I1                              ; Configure microstepping with interpolation
+M350 Z16 I1                              ; Configure microstepping with interpolation
 ;M350 E1 I1                               ; Configure microstepping with interpolation
 ;M350 U1 I1                               ; Configure microstepping with interpolation
 M350 E16 I1                              ; Configure microstepping with interpolation
@@ -19,8 +19,10 @@ M92 X80.00 Y80.00                        ; Set steps per mm
 ; 1/16 microstepping
 ; 5 * 16 = 80
 
-M98 P0:/sys/z_mode_smooth.g
-;M98 P0:/sys/z_mode_rough.g
+M92 Z400.00                              ; Set steps per mm
+; 40 um per full step
+; 1000/40 = 25
+; 25 * 16 = 400
 
 ; digging through Prusa i3 MK3 release firmware files
 ; 280 steps/mm with 1/32 microstepping (also see 560 steps/mm with 1/64 microstepping)
