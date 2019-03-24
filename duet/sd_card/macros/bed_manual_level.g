@@ -1,13 +1,13 @@
 G28 X Y                     ; home X and Y since we are moving to corner anyways
 
-M98 P0:/macros/raisebed.g
+M98 P0:/macros/bed_raise.g
 
 M581 T8 E0 S0 C0            ; configure button trigger for file 8
 
 G90                         ; absolute positioning
 
 G0 Z2 F100
-G0 X1 Y1 F3000
+G0 X1 Y10 F3000
 G0 Z0 F100
 
 M98 P0:/sys/buttoncfg_green.g
@@ -15,7 +15,7 @@ M291 P"Adjust bed level knob on the front left corner, press OK button to contin
 M98 P0:/sys/buttoncfg_off.g
 
 G0 Z2 F100
-G0 X189 Y1 F3000
+G0 X189 Y10 F3000
 G0 Z0 F100
 
 M98 P0:/sys/buttoncfg_green.g
