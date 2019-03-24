@@ -20,7 +20,7 @@ M574 Z0 S1 C2         ; completely disable limit switch for Z
 
 M98 P0:/sys/homingsteppersettings.g    ; slow down everything so stall detection can be more sensitive
 
-M915 X S3 F0 H200 R0  ; set stall detection threshold lower so it is more sensitive during homing
+M915 X Y S3 F0 H200 R0    ; set stall detection threshold lower so it is more sensitive during homing
 
 G1 S1 X10 Y10 F3500   ; move a bit away to give time to accelerate
 
@@ -31,7 +31,7 @@ G1 S2 Y1 F500         ; move slowly away from endstop +1mm, prevents rubbing aga
 
 M98 P0:/sys/stepperacceljerk.g    ; restore old settings
 
-M915 X S60 F0 H200 R3             ; set stall detection threshold higher so it is less sensitive during normal printing
+M915 X Y S60 F0 H200 R3    ; set stall detection threshold higher so it is less sensitive during normal printing
 
 G90                   ; absolute positioning
 G92 X1 Y1 Z288 U0     ; set positions to axis limit (you may want to adjust this)
