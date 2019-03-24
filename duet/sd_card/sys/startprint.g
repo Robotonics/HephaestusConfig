@@ -26,3 +26,5 @@ G0 Z0 F100       ; touch the glass to cut off the strand of filament
 ; Cura will choose extruder relative/absolute mode
 
 M581 T7 E0 S0 C0            ; configure button trigger for file 7
+
+M82 ; absolute extrusion mode, expected by Cura
