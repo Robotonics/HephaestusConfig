@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "Hephaestus",
-    "inherits": "ultimaker",
+    "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
         "author": "Frank Zhao",
@@ -22,10 +22,10 @@
     "overrides": {
         "machine_name": { "default_value": "hephaestus" },
         "machine_start_gcode" : {
-            "value": "M98 P0:/sys/startprint.g\n"
+            "default_value": "M98 P0:/sys/startprint.g\n"
         },
         "machine_end_gcode" : {
-            "value": "M98 P0:/sys/endprint.g\n"
+            "default_value": "M98 P0:/sys/endprint.g\n"
         },
         "machine_width": {
             "default_value": 185
