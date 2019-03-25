@@ -83,7 +83,10 @@
 		"cool_min_speed": { "value": "50" },
 
 		"line_width": { "value": "round(machine_nozzle_size * 0.875, 3)" },
+		"infill_line_width": { "value": "round(machine_nozzle_size * 1.2, 3)" },
 		"layer_height_0": { "value": "divmod(round(machine_nozzle_size / 0.015, 0) + 2, 4)[0] * 0.04" },
+		"layer_height": { 	"value": "divmod(round(machine_nozzle_size / 0.02, 0), 4)[0] * 0.04 if machine_nozzle_size < 1.0 else 1.0",
+							"resolve": "min(extruderValues('layer_height'))" },
 
 		"machine_heated_bed": { "default_value": false },
 		"machine_nozzle_temp_enabled": { "value": false },
