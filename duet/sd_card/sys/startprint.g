@@ -23,8 +23,8 @@ G0 E8 F150     ; purge filament slow
 
 ;G10         ; retract
 
-G0 X10 Y10 Z0 F3000      ; move out of the way of the blob
-;G0 Z0 F100       ; touch the glass to cut off the strand of filament
+G0 X2 Y20 Z0 F3000      ; move out of the way of the blob
+;G0 Z0 F100               ; touch the glass to cut off the strand of filament
 
 ; Cura generates a G10 retraction anyways
 ; Cura will choose extruder relative/absolute mode
