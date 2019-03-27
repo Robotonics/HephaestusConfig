@@ -1,6 +1,8 @@
 ; slicer must be configured to call this macro
 
+M581 T6 E0 S-1 C0 ; de-configure button trigger
 M581 T7 E0 S-1 C0 ; de-configure button trigger
+M98 P0:/sys/buttoncfg_off.g
 
 M83            ; relative extruder moves
 

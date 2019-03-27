@@ -29,6 +29,7 @@ G0 X10 Y10 Z0 F3000      ; move out of the way of the blob
 ; Cura generates a G10 retraction anyways
 ; Cura will choose extruder relative/absolute mode
 
+M581 T6 E0 S-1 C0           ; de-configure button trigger
 M581 T7 E0 S0 C0            ; configure button trigger for file 7
 
 M82 ; absolute extrusion mode, expected by Cura
