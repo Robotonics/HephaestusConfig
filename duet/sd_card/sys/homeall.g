@@ -1,6 +1,8 @@
 ; homeall.g
 ; called to home all axes
 
+M98 P0:/sys/homingsteppersettings.g    ; slow down everything so stall detection can be more sensitive
+
 M564 H0 S0            ; allow movement even if not homed or outside of limits
 G91                   ; relative positioning
 
@@ -17,8 +19,6 @@ G1 S2 Z1 F300         ; move Z up (bed down), slow, until the physical stop is r
 ; this should make sure both leadscrews are in sync
 
 M574 Z0 S1 C2         ; completely disable limit switch for Z
-
-M98 P0:/sys/homingsteppersettings.g    ; slow down everything so stall detection can be more sensitive
 
 M915 X Y S3 F0 H200 R0    ; set stall detection threshold lower so it is more sensitive during homing
 

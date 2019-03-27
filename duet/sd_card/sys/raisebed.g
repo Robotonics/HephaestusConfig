@@ -1,5 +1,7 @@
 G91                         ; relative positioning
 
+M98 P0:/sys/homingsteppersettings.g    ; slow down Z acceleration and jerk
+
 G0 S0 Z-2 F100              ; move Z up to clear the shaft collar lock
 
 G90                         ; absolute positioning

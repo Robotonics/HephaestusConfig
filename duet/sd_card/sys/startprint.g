@@ -8,14 +8,15 @@ M116        ; wait for temperature
 G28 X Y     ; home
 G0 X1 Y1    ; move to corner
 
-;G28 Z ; home
+G28 Z       ; home
+
 M98 P0:/macros/bed_raise.g
+
+M98 P0:/sys/stepperacceljerk.g    ; restore fast Z
 
 M83 ; relative extruder moves
 
 M116 ; wait for temperature
-
-G0 Z5          ; closer to bed
 
 G0 E8 F200     ; advance filament through heatsink fast
 G0 E8 F150     ; purge filament slow

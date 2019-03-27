@@ -6,6 +6,10 @@
 M564 H0 S0            ; allow movement even if not homed or outside of limits
 G91                   ; relative positioning
 
+; slow down acceleration and jerk
+M566 Z12.00
+M201 Z20.00
+
 M574 Z2 S0 C2         ; setup limit switch for Z
 
 G1 S1 Z500 F8000      ; move Z up (bed down), fast, until the limit switch is triggered

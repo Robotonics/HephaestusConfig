@@ -39,7 +39,6 @@ M92 U5600.00                             ; Set steps per mm (with microstepping)
 ; acceleration and jerk for X and Y are set in the following macro
 M98 P0:/sys/stepperacceljerk.g
 
-M566 Z12.00                              ; Set maximum instantaneous speed changes (mm/min)
 M566 E120.00                             ; Set maximum instantaneous speed changes (mm/min)
 M566 U120.00                             ; Set maximum instantaneous speed changes (mm/min)
 
@@ -48,7 +47,6 @@ M203 Z1000.00                            ; Set maximum speeds (mm/min)
 M203 E800.00                             ; Set maximum speeds (mm/min)
 M203 U800.00 I15.00                      ; Set maximum speeds (mm/min), and minimum
 
-M201 Z20.00                              ; Set accelerations (mm/s^2)
 M201 E250.00                             ; Set accelerations (mm/s^2)
 M201 U250.00                             ; Set accelerations (mm/s^2)
 
