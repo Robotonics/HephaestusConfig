@@ -8,7 +8,7 @@ M98 P0:/sys/buttoncfg_green.g
 M98 P0:/sys/homingsteppersettings.g    ; slow down everything
 
 M83            ; relative extruder moves
-G1 E-10 F150   ; retract 10mm of filament
+G1 E-3 F150    ; retract filament
 G91            ; relative positioning
 G1 Z5 F360     ; lift Z by 5mm
 G90            ; absolute positioning

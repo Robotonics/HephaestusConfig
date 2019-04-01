@@ -4,7 +4,7 @@ G91                   ; relative positioning
 G1 S1 Z10 F8000       ; dive bed down fast
 
 M83            ; relative extruder moves
-G0 E-2 F150    ; retract
+G0 E-3 F150    ; retract
                ; the end of the filament should be in the cold area but still gripped by the gear
 
 ;M107           ; fan off
