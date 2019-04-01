@@ -1,4 +1,4 @@
-G28 X Y                     ; home X and Y since we are moving to corner anyways
+G28 X Y Z                   ; home X and Y since we are moving to corner anyways
 
 M98 P0:/macros/bed_raise.g
 
