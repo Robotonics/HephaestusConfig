@@ -20,6 +20,7 @@ M574 U1 S0 C3                  ; Set E/U endstop controlled by limit switch, act
 M291 P"Heating complete, insert filament against the gear and press the button when ready for insertion" R"Filament Insert" S1 T0
 
 G0 S1 U9999 F1                 ; this is so slow that it's actually a "wait for button press"
+M400                           ; wait for move to finish before dismissing prompt
 M292 P0                        ; acknowledge message and continue
 M574 U1 S1 C3                  ; Set E/U endstop controlled by limit switch, active high (wait for button release)
 G0 S1 U9999 F1                 ; this is so slow that it's actually a "wait for button release"
@@ -30,6 +31,7 @@ G0 S1 U50 F250                 ; fast move
 
 M574 U1 S0 C3                  ; Set E/U endstop controlled by limit switch, active low (wait for button press)
 G0 S1 U9999 F150               ; slow purge user presses button
+M400                           ; wait for move to finish before dismissing prompt
 M292 P0                        ; acknowledge message and continue
 M574 U1 S1 C3                  ; Set E/U endstop controlled by limit switch, active high (wait for button release)
 G0 S1 U9999 F150               ; slow purge user releases button
