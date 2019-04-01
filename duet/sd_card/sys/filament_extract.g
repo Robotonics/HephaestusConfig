@@ -22,8 +22,7 @@ M291 P"Press the button to stop the extraction" R"Filament Extract" S1 T0
                                ; with my extruder design, the user does not have to be present for filament extraction to keep the spool neat
                                ; (unlike Ultimaker, on which the filament will pop out and could possibly tangle on the spool)
 
-G0 S1 U-100 F500               ; fast extract until the filament clears the gear
-G0 S1 U-9999 F300              ; slow extract until user presses button
+G0 S1 U-9999 F300              ; extract until user presses button
                                ; keep in mind that we might be assisting in clearing a jam, so never stop spinning until the user says so
 
 M574 U0                        ; unassign endstop switch
