@@ -28,10 +28,10 @@
 			"default_value": "M98 P0:/sys/endprint.g\n"
 		},
 		"machine_width": {
-			"default_value": 185
+			"default_value": 190
 		},
 		"machine_depth": {
-			"default_value": 175
+			"default_value": 170
 		},
 		"machine_height": {
 			"default_value": 285

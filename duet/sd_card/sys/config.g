@@ -25,7 +25,7 @@ M98 P0:/sys/steppersettings.g
 
 ; Axis Limits
 M208 X0 Y0 Z0 S1                         ; Set axis minima
-M208 X185 Y175 Z288 S0                   ; Set axis maxima
+M208 X190 Y170 Z288 S0                   ; Set axis maxima
 ; printer measurement to be done later
 
 ; Endstops
