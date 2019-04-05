@@ -55,6 +55,9 @@ G10 P0 X0 Y0 Z0                          ; Set tool 0 axis offsets
 ;G10 P0 R0 S200                           ; Set initial tool 0 active and standby temperatures
                                          ; Do not set tool initial temperature, tpostn will recall settings for previously used filament
 
+G10 P0 R0 S0                             ; Set tool temperature to 0 so we can call T0 without a safety hazard
+T0 P0                                    ; For some reason, calling M703 without T0 first will fail, quite annoying
+
 ; Volumetric Extrusion
 ;M200 D2.85                               ; Set filament diameter
 ; nozzle size needs to be set

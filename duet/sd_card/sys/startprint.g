@@ -1,7 +1,7 @@
 ; slicer must be configured to call this macro
 
-M703        ; loads last used filament config
-T0          ; select tool, which starts the heaters
+;M703        ; loads last used filament config
+T0 P4        ; select tool, which starts the heaters, forces execution of tpost0 (which calls M703)
 
 M116        ; wait for temperature
 

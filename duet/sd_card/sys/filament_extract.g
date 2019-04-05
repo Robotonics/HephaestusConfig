@@ -3,7 +3,7 @@
 
 M18 X Y                        ; disables all stepper motors, allows for movement of extruder
 
-T0
+T0 P4                          ; select T0 and force run tpost0 (which calls M703)
 
 M98 P0:/sys/buttoncfg_red.g
 
