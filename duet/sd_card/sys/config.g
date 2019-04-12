@@ -41,7 +41,7 @@ M307 A202.5 C368.4 D3.7 B0 S1.0 V24.2    ; Tuned parameters
 ; Nozzle Heater
 M305 P1 X200                             ; Configure PT100 for heater 1
 M143 H1 S300                             ; Set temperature limit for heater 1
-M307 A478.6 C120.4 D2.6 B0 S1.0 V24.2     ; Tuned parameters
+M307 A834.7 C226.9 D3.4 B0 S1.0 V24.2     ; Tuned parameters
 
 ; Fans
 M106 P0 S1 I0 F500 H-1                   ; Set fan 0 value, PWM signal inversion and frequency. Thermostatic control is turned off
