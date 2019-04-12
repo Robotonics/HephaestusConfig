@@ -3,6 +3,8 @@
 T0 P4        ; select tool, which starts the heaters, forces execution of tpost0 (which calls M703)
 ;M703        ; loads last used filament config
 
+M106         ; fan on, no point, but checks if fan is working, may reduce heater overshoot
+
 M116 S10     ; wait for temperature
 
 G28 X Y      ; home
@@ -17,6 +19,8 @@ M98 P0:/sys/stepperacceljerk.g    ; restore fast Z
 M83 ; relative extruder moves
 
 M116 S5         ; wait for temperature
+
+M107            ; fan off
 
 G0 E15 F150     ; advance filament through heatsink fast
 G0 E15 F100     ; purge filament slow
