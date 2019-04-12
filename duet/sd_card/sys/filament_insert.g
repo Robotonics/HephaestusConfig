@@ -12,7 +12,7 @@ M584 P4                        ; Unhides U axis
 M564 H0 S0                     ; allow U axis to move freely
 G91                            ; relative axis moves
 M83                            ; relative extruder moves
-M116 P0                        ; wait for temperature
+M116 P0 S10                    ; wait for temperature
 
 M98 P0:/sys/buttoncfg_green.g
 
