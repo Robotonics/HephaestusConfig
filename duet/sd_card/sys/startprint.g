@@ -18,8 +18,8 @@ M83 ; relative extruder moves
 
 M116 ; wait for temperature
 
-G0 E12 F200     ; advance filament through heatsink fast
-G0 E10 F150     ; purge filament slow
+G0 E15 F150     ; advance filament through heatsink fast
+G0 E15 F100     ; purge filament slow
 
 ;G10         ; retract
 
