@@ -2,8 +2,9 @@
 
 T0 P4        ; select tool, which starts the heaters, forces execution of tpost0 (which calls M703)
 ;M703        ; loads last used filament config
+M144 S1      ; bed to active temperature
 
-M106         ; fan on, no point, but checks if fan is working, may reduce heater overshoot
+M106 S255    ; fan on, no point, but checks if fan is working, may reduce heater overshoot
 
 M116 S10     ; wait for temperature
 
@@ -22,12 +23,12 @@ M116 S5         ; wait for temperature
 
 M107            ; fan off
 
-G0 E15 F150     ; advance filament through heatsink fast
+G0 E15 F100     ; advance filament through heatsink fast
 G0 E15 F100     ; purge filament slow
 
 ;G10             ; retract
 
-G0 X2 Y20 Z0 F3000      ; move out of the way of the blob
+G0 X2 Y50 Z0 F3000      ; move out of the way of the blob
 ;G0 Z0 F100              ; touch the glass to cut off the strand of filament
 
 ; Cura generates a G10 retraction anyways

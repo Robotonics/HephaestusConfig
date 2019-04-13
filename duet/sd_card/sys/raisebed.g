@@ -6,8 +6,8 @@ G0 S0 Z-2 F100              ; move Z up to clear the shaft collar lock
 
 G90                         ; absolute positioning
 
-G0 S0 Z20 F3000             ; move Z up fast
-G0 S0 Z15 F100              ; move Z up slow, prevents damage to glass
+G0 S0 Z25 F3000             ; move Z up fast
+G0 S0 Z20 F100              ; move Z up slow, prevents damage to glass
 
 ; this macro is called before:
 ;                           starting a print
