@@ -12,7 +12,7 @@ G0 X1 Y1     ; move to corner
 
 G28 Z        ; home
 
-M98 P0:/macros/bed_raise.g
+M98 P0:/sys/raisebed.g
 
 M98 P0:/sys/stepperacceljerk.g    ; restore fast Z
 
