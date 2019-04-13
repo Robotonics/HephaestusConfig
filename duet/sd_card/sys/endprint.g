@@ -1,11 +1,11 @@
 ; slicer must be configured to call this macro
 
-G91                   ; relative positioning
-G1 S1 Z10 F8000       ; dive bed down fast
-
-M83            ; relative extruder moves
-G0 E-3 F150    ; retract
-               ; the end of the filament should be in the cold area but still gripped by the gear
+G91                     ; relative positioning
+M83                     ; relative extruder moves
+M574 Z2 S0 C2           ; setup limit switch for Z
+G1 S2 Z10 E-1.5 F6000   ; dive bed down
+G0 E-1.5 F150           ; retract
+                        ; the end of the filament should be in the cold area but still gripped by the gear
 
 ;M107           ; fan off
 
