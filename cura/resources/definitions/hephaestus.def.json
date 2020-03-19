@@ -51,6 +51,9 @@
 		"gantry_height": {
 			"default_value": 35
 		},
+		"machine_use_extruder_offset_to_offset_coords": {
+			"default_value": true
+		},
 		"machine_gcode_flavor": {
 			"default_value": "RepRap (Marlin/Sprinter)"
 		},
@@ -75,6 +78,8 @@
 		"machine_max_feedrate_e": {
 			"default_value": 5
 		},
+		"acceleration_print": { "value": 1500 },
+		"acceleration_travel": { "value": 1500 },
 
 		"machine_max_acceleration_x": { "default_value": 1500.0 },
 		"machine_max_acceleration_y": { "default_value": 3000.0 },
